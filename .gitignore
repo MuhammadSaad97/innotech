@@ -1,0 +1,20 @@
+node_modules/
+.next/
+.firebase/
+
+*.log
+firebase-debug.log
+storage-video-urls.json
+
+.env
+.env.*
+!.env.example
+
+.vercel/
+out/
+dist/
+coverage/
+
+.agents/
+Office Photos/
+*.zip
