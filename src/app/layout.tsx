@@ -21,15 +21,22 @@ export const metadata: Metadata = {
     title: `${siteProfile.name} | ${siteProfile.tagline}`,
     description: siteProfile.description,
     siteName: siteProfile.name,
-    images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630 }],
+    images: [
+      {
+        url: '/brand/innotech-logo.jpeg',
+        width: 550,
+        height: 453,
+        alt: `${siteProfile.name} logo`
+      }
+    ],
     locale: 'en_PK',
     type: 'website'
   },
   twitter: {
-    card: 'summary_large_image',
+    card: 'summary',
     title: `${siteProfile.name} | ${siteProfile.tagline}`,
     description: siteProfile.description,
-    images: ['/opengraph-image.jpg']
+    images: ['/brand/innotech-logo.jpeg']
   }
 };
 
