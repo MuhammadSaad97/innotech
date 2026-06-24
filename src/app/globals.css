@@ -766,11 +766,17 @@ h2 {
   }
 
   .hero {
-    min-height: 720px;
+    min-height: calc(100svh - 76px);
+  }
+
+  .hero-media img {
+    object-position: 56% center;
+    transform: scale(1.18);
+    transform-origin: center bottom;
   }
 
   .hero-content {
-    padding: 78px 0;
+    padding: 56px 0;
   }
 
   .brand span {

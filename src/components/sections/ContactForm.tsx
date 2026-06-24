@@ -45,9 +45,9 @@ export default function ContactForm() {
     const now = new Date().toISOString();
     const enquiry: ContactDocument = {
       name,
-      phone: phone || undefined,
-      email: email || undefined,
-      service: service || undefined,
+      ...(phone ? { phone } : {}),
+      ...(email ? { email } : {}),
+      ...(service ? { service } : {}),
       message,
       status: 'new',
       createdAt: now,
